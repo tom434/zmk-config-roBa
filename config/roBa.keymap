@@ -72,10 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                          &kp T                                                      &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                          &kp G        &kp APOS                       &kp LBKT       &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B        &kp COLON                      &kp RBKT       &kp N        &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt 4 SPACE  &lt_to_layer_0 5 INT_KANA      &kp BACKSPACE  &lt 3 ENTER                             &lt_to_layer_0 2 ESC
+&kp Q             &kp W         &kp E         &kp R                          &kp T                                                                 &kp Y                   &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                          &kp G                   &kp APOS                       &kp LBKT       &kp H                   &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                          &kp B                   &kp COLON                      &kp RBKT       &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_MUHENKAN  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 INT_KANA      &kp BACKSPACE  &lt_to_layer_0 3 ENTER                             &lt_to_layer_0 2 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -121,9 +121,9 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &kp N2  &kp N3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0                          &trans
             >;
         };
