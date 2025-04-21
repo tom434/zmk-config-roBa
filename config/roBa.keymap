@@ -74,7 +74,7 @@
             bindings = <
 &kp Q             &kp W  &kp E         &kp R                      &kp T                                                                          &kp Y                   &kp U  &lt 5 I    &kp O    &kp P
 &mt LEFT_SHIFT A  &kp S  &kp D         &kp F                      &kp G                   &kp APOS                       &kp RBKT                &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
-&mt LEFT_SHIFT Z  &kp X  &kp C         &kp V                      &kp B                   &kp LBKT                       &kp BSLH                &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
+&lt 2 Z           &kp X  &kp C         &kp V                      &kp B                   &kp LBKT                       &kp BSLH                &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
 &kp LCTRL         &mo 1  &kp LEFT_WIN  &mt LEFT_ALT INT_MUHENKAN  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 INT_KANA      &mt LEFT_WIN BACKSPACE  &lt_to_layer_0 3 ENTER                             &lt_to_layer_0 2 ESC
             >;
 
@@ -94,7 +94,7 @@
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp UNDERSCORE
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
@@ -121,10 +121,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N1  &kp N2  &kp N3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0                          &trans
+&trans  &trans  &trans  &trans  &trans                      &kp KP_PLUS      &kp N7  &kp N8  &kp N9  &kp KP_MINUS
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp KP_ASTERISK  &kp N4  &kp N5  &kp N6  &kp KP_SLASH
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &kp N1  &kp N2  &kp N3  &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0                                   &trans
             >;
         };
 
