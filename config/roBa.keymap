@@ -72,10 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W  &kp E         &kp R                      &kp T                                                                          &kp Y                   &kp U  &kp I      &kp O    &kp P
-&mt LEFT_SHIFT A  &kp S  &kp D         &kp F                      &kp G                   &kp LBKT                       &kp RBKT                &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
-&lt 2 Z           &kp X  &kp C         &kp V                      &kp B                   &kp APOS                       &kp BSLH                &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
-&kp LCTRL         &mo 1  &kp LEFT_WIN  &mt LEFT_ALT INT_MUHENKAN  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 INT_KANA      &mt LEFT_WIN BACKSPACE  &lt_to_layer_0 3 ENTER                             &lt_to_layer_0 2 ESC
+&kp Q             &kp W   &kp E         &kp R                      &kp T                                                                          &kp Y                   &kp U  &kp I      &kp O    &kp P
+&mt LEFT_SHIFT A  &kp S   &kp D         &kp F                      &kp G                   &kp LBKT                       &kp RBKT                &kp H                   &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMICOLON
+&lt 2 Z           &kp X   &kp C         &kp V                      &kp B                   &kp APOS                       &kp BSLH                &kp N                   &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 5 SLASH
+&kp LCTRL         &tog 1  &kp LEFT_WIN  &mt LEFT_ALT INT_MUHENKAN  &lt_to_layer_0 4 SPACE  &lt_to_layer_0 5 INT_KANA      &mt LEFT_WIN BACKSPACE  &lt_to_layer_0 3 ENTER                             &lt_to_layer_0 2 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -86,7 +86,7 @@
 &trans  &trans  &trans  &trans   &trans                         &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6       &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans   &trans   &trans       &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans   &trans   &trans       &trans   &trans                          &to 0
             >;
         };
 
@@ -95,16 +95,16 @@
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp UNDERSCORE
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&trans                      &none            &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &trans                  &trans  &trans                   &trans                      &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_UP
-&trans  &kp LG(LEFT_ARROW)      &trans  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DN
-&trans  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&trans  &trans                  &trans  &trans                   &trans  &trans      &trans  &trans                                                   &trans
+&trans  &trans                  &kp LG(UP_ARROW)    &trans                   &trans                      &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PG_UP
+&trans  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans  &trans      &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_DN
+&trans  &kp LG(LC(LEFT_ARROW))  &trans              &kp LG(LC(RIGHT_ARROW))  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
+&trans  &none                   &trans              &trans                   &trans  &trans      &trans  &trans                                                   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -123,7 +123,7 @@
             bindings = <
 &trans  &trans  &trans  &trans   &trans                                &kp KP_PLUS      &kp N7  &kp N8  &kp N9  &kp KP_MINUS
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6       &kp KP_NUMLOCK  &kp KP_ASTERISK  &kp N4  &kp N5  &kp N6  &kp KP_SLASH
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12      &trans          &kp SLASH        &kp N1  &kp N2  &kp N3  &kp KP_DOT
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12      &trans          &kp MINUS        &kp N1  &kp N2  &kp N3  &kp KP_DOT
 &trans  &trans  &trans  &trans   &trans   &trans       &trans          &kp N0                                   &trans
             >;
         };
@@ -133,7 +133,7 @@
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &none         &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
