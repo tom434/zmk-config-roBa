@@ -55,6 +55,11 @@
             bindings = <&kp LC(O)>;
             key-positions = <23 24>;
         };
+
+        CTR {
+            bindings = <&sk LCTRL>;
+            key-positions = <38 41>;
+        };
     };
 
     macros {
