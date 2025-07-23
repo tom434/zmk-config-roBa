@@ -50,6 +50,16 @@
             bindings = <&kp DELETE>;
             key-positions = <40 21>;
         };
+
+        Ctrl+c {
+            bindings = <&kp LC(C)>;
+            key-positions = <22 24>;
+        };
+
+        Ctrl+v {
+            bindings = <&kp LC(V)>;
+            key-positions = <22 25>;
+        };
     };
 
     macros {
