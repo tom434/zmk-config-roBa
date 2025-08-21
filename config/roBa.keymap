@@ -42,7 +42,7 @@
         };
 
         Redo {
-            bindings = <&kp LC(O)>;
+            bindings = <&kp LC(Y)>;
             key-positions = <23 24>;
         };
 
