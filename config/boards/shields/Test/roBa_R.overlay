@@ -19,7 +19,7 @@
     excluded-positions = <
         10 18 19 20 21 
         22 30 31 32 33 
-        34 35 37 38 39 40 41 42 
+        34 41 
     >;
     require-prior-idle-ms = <200>;
 };
