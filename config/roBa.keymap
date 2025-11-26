@@ -72,6 +72,24 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+        
+        exit_AML: exit_AML {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <0>;
+            bindings = <&tog_off MOUSE>;
+            label = "exit_AML";
+        };
+
+        kp_exit_AML: kp_exit_AML {
+            compatible = "zmk,behavior-macro-one-param";
+            wait-ms = <0>;
+            tap-ms = <0>;
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
+            label = "KP_exit_AML";
+        };
     };
 
     behaviors {
@@ -83,6 +101,24 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+        
+        tog_off: toggle_layer_off {
+            compatible = "zmk,behavior-toggle-layer";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer Off";
+            toggle-mode = "off";
+        };
+
+        mt_exit_AML_on_tap: mt_exit_AML_on_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_exit_AML_ON_TAP";
+            bindings = <&kp>, <&kp_exit_AML>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <200>;
+        };
     };
 
     keymap {
@@ -91,9 +127,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp L         &kp U        &kp COMMA                  &kp DOT                                                                 &kp F        &kp W  &kp R  &kp Y  &kp P
-&mt LEFT_SHIFT E  &kp I         &kp A        &kp O                      &kp MINUS      &kp LEFT_BRACKET                 &kp RBKT                &kp K        &kp T  &kp N  &kp S  &mt RIGHT_SHIFT H
-&mt LCTRL Z       &kp X         &kp C        &kp V                      &kp SEMICOLON  &kp SINGLE_QUOTE                 &kp NUHS                &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL         &kp LEFT_WIN  &kp INT_YEN  &mt LEFT_ALT INT_MUHENKAN  &lt 4 SPACE    &lt_to_layer_0 5 INT_HENKAN      &mt LEFT_ALT BACKSPACE  &lt 3 ENTER                       &lt_to_layer_0 5 ESC
+&mt_exit_AML_on_tap LEFT_SHIFT E  &kp I         &kp A        &kp O                      &kp MINUS      &kp LEFT_BRACKET                 &kp RBKT                &kp K        &kp T  &kp N  &kp S  &mt_exit_AML_on_tap RIGHT_SHIFT H
+&mt_exit_AML_on_tap LCTRL Z       &kp X         &kp C        &kp V                      &kp SEMICOLON  &kp SINGLE_QUOTE                 &kp NUHS                &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LCTRL         &kp LEFT_WIN  &kp INT_YEN  &mt_exit_AML_on_tap LEFT_ALT INT_MUHENKAN  &lt 4 SPACE    &lt_to_layer_0 5 INT_HENKAN      &mt_exit_AML_on_tap LEFT_ALT BACKSPACE  &lt 3 ENTER                       &lt_to_layer_0 5 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
