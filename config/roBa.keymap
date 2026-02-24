@@ -129,7 +129,7 @@
 &kp Q                             &kp L         &kp U        &kp COMMA                           &kp DOT                                                                            &kp F        &kp W  &kp R  &kp Y  &kp P
 &mt_exit_AML_on_tap LEFT_SHIFT E  &kp I         &kp A        &kp O                               &kp MINUS      &kp LEFT_BRACKET            &kp RBKT                                &kp K        &kp T  &kp N  &kp S  &mt_exit_AML_on_tap RIGHT_SHIFT H
 &mt_exit_AML_on_tap LCTRL Z       &kp X         &kp C        &kp V                               &kp SEMICOLON  &kp SINGLE_QUOTE            &kp NUHS                                &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LCTRL                         &kp LEFT_WIN  &kp INT_YEN  &mt_exit_AML_on_tap LEFT_ALT LANG2  &lt 4 SPACE    &lt_to_layer_0 5 LANG1      &mt_exit_AML_on_tap LEFT_ALT BACKSPACE  &lt 3 ENTER                       &lt_to_layer_0 5 ESC
+&kp LCTRL                         &kp LEFT_WIN  &kp INT_YEN  &mt_exit_AML_on_tap LEFT_ALT LANG2  &kp SPACE      &lt_to_layer_0 5 LANG1      &mt_exit_AML_on_tap LEFT_ALT BACKSPACE  &lt 3 ENTER                       &lt_to_layer_0 5 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
