@@ -35,7 +35,7 @@
         };
 
         BTConf {
-            bindings = <&sl 6>;
+            bindings = <&to 6>;
             key-positions = <34 39 40>;
         };
 
